@@ -1,0 +1,341 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Payment</title>
+   <link rel="stylesheet" href="./Styles/payment.css">
+  </head>
+
+  <body>
+    <div class="header-container">
+      <div class="cont1">
+        <div>
+          <div class="logo">HEALT<span>HK</span>ART</div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg"
+              alt=""
+            />CART
+          </div>
+          <div></div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg"
+              alt=""
+            />ADDRESS
+          </div>
+          <div></div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-blue.svg"
+              alt=""
+            />PAYMENT
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cont2">
+      <div class="cont2box1">
+        <div class="c2b1b1">
+          <div>Choose Payment Options</div>
+          <div>
+            <div id="payment-divs">
+              <div id="puu">Pay Using UPI</div>
+              <div id="cod">Cash On Delivery</div>
+              <div id="dc">Debit Card</div>
+              <div id="cc">Credit Card</div>
+              <div id="pp">PhonePe</div>
+              <div id="pw">Paytm Wallet</div>
+              <div id="ap">
+                <p>Amazon Pay</p>
+                <p class="offers">
+                  <img
+                    src="https://img8.hkrtcdn.com/react/static/media/payment/discount.svg"
+                    alt="offers"
+                  />
+                  Offers Available
+                </p>
+              </div>
+              <div id="mw">
+                <p>Mobikwik Wallet</p>
+                <p class="offers">
+                  <img
+                    src="https://img8.hkrtcdn.com/react/static/media/payment/discount.svg"
+                    alt="offers"
+                  />
+                  Offers Available
+                </p>
+              </div>
+              <div id="ow">Other Wallets</div>
+              <div id="ib">Internet Banking</div>
+              <div id="ep">EMI or Pay Later</div>
+            </div>
+            <div class="middle-div">
+              <div class="cod" id="cods">
+                <div>
+                  <span><span></span></span>
+                  <span class="cashon">CASH ON DELIVERY</span>
+                </div>
+                <div>
+                  <ul>
+                    <li>You will not earn any HK Cash through COD</li>
+                    <li>For order below ₹500, we charge ₹30 for COD</li>
+                    <li type="none">
+                      <div class="checkout-flex">
+                        <input type="checkbox" id="squarebox" /><span
+                          >Check the box here to confirm &amp; complete your
+                          purchase through Cash On Delivery option.</span
+                        >
+                      </div>
+                    </li>
+                    <li type="none">
+                      <p>
+                        Avoid out of cash & change problems. Use Credit/Debit
+                        card, Internet banking,
+                      </p>
+                      <p>Wallets or UPI for convenient experience.</p>
+                      <p>
+                        HK Cash is not valid on Cash on Delivery orders. Use
+                        Prepaid Payment Mode
+                      </p>
+                      <p>to Earn & Redeem HK Cash</p>
+                    </li>
+                    <li type="none" id="pay-button">
+                      <div id="cashDelivery">Pay Later <span id="cod_tot1">-₹529</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="dcs">
+                <div>Enter Card Details</div>
+                <div>
+                  <input type="text" placeholder="Card holder name" />
+                  <input type="text" placeholder="Card Number" />
+                </div>
+                <div>
+                  <select name="" id="monthoptions">
+                    <option value="Expiry MM">Expiry MM</option>
+                  </select>
+                  <select name="" id="yearoptions">
+                    <option value="Expiry YY">Expiry YY</option>
+                  </select>
+                  <input type="number" placeholder="CVV" />
+                </div>
+                <div>
+                  <input type="checkbox" />
+                  <span>Securely saved for faster payments </span>
+                </div>
+                <div class="card-imgs">
+                  <img
+                    src="https://img1.hkrtcdn.com/1718/RuPay-Icon.png"
+                    class=""
+                    alt="Rupay"
+                  /><img
+                    src="https://s3-ap-southeast-1.amazonaws.com/hkprod/13831/normal_1383075_o.png"
+                    class=""
+                    alt="Visa"
+                  /><img
+                    src="https://s3-ap-southeast-1.amazonaws.com/hkprod/13831/normal_1383073_o.png"
+                    class=""
+                    alt="MasterCard"
+                  /><img
+                    src="https://s3-ap-southeast-1.amazonaws.com/hkprod/payment_img/card/ic_maestro.png"
+                    class=""
+                    alt="Maestro"
+                  /><img
+                    src="https://s3-ap-southeast-1.amazonaws.com/hkprod/payment_img/card/Maestro_logo.png"
+                    class=""
+                    alt="SBI Maestro Card"
+                  />
+                </div>
+                <div>
+                  <div class="paylater">
+                    <div>Pay &#8377 <span id="cod_tot">-₹529</span></div>
+                  </div>
+                </div>
+              </div>
+              <div id="puus">
+                <div>
+                  <div>
+                    <input type="radio" name="upi" id="phonepe" />
+                    <img
+                      class="upi-image"
+                      src="https://s3-ap-southeast-1.amazonaws.com/hkprod/12028/normal_1202725_o.jpg"
+                      alt="PhonePe"
+                    />
+                    <p>PhonePe</p>
+                  </div>
+                  <div>
+                    <div class="paylater">Pay Securely &#8377 <span id="phonePe-pay">529</span></div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <input type="radio" name="upi" id="normalupi" />
+                    <img
+                      class="upi-image"
+                      src="https://img1.hkrtcdn.com/1179/paytm-upi.png"
+                      alt="PhonePe"
+                    />
+                    <p>UPI</p>
+                  </div>
+                  <div>
+                    <div class="paylater">Pay Securely <span id="bhim-pay">₹529</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c2b1b2">
+          <div class="delivery-address-section">
+            <p>
+              <span
+                ><span
+                  ><img
+                    class="delivery-location-img"
+                    src="https://img8.hkrtcdn.com/react/static/media/payment/location-outline.svg"
+                    alt=""
+                  />
+                </span>
+                <span id="pin-state"> Delivery at 50001,New Jersey</span></span
+              >
+              <span style="color: #1ebcbd" onclick="changeAdress()"
+                >Change</span
+              >
+            </p>
+            <p id="user-name">Tony Soprano</p>
+            <p id="address-number">
+              251 Broadway Street Penns Avenue, New Jersey(NJ),Phone:987654321
+            </p>
+          </div>
+          <div class="order-summary-section">
+            <div>
+              <p>Order Summary</p>
+            </div>
+            <div class="order-summary-content">
+              <p><span>Total</span> <span id="tot_pay">₹1000</span></p>
+            </div>
+            <div class="order-summary-content">
+              <p><span>HealthKart Price</span> <span id="hp_price">₹499</span></p>
+            </div>
+            <div class="order-summary-content">
+              <p>
+                <span
+                  ><img
+                    src="https://img2.hkrtcdn.com/react/static/media/common/premium-outline.svg"
+                    alt=""
+                  />Discount</span
+                >
+                <span id="di_price">-₹501</span>
+              </p>
+            </div>
+            <div class="order-summary-content">
+              <p><span>COD</span> <span>₹30</span></p>
+            </div>
+            <div class="order-summary-content">
+              <p><span>Shipping</span> <span>FREE</span></p>
+            </div>
+            <div class="order-summary-content">
+              <p><span>Total Payable</span> <span id="tp_price">₹529</span></p>
+            </div>
+          </div>
+          <div class="icon-section">
+            <div>
+              <img
+                src="https://img8.hkrtcdn.com/react/static/media/payment/hk_cash_coin.svg"
+                class="hkcash"
+                width="15px"
+              />
+              100% Safe & Secure Payments
+            </div>
+            <div class="payment-icons">
+              <img
+                data-original="https://img2.hkrtcdn.com/react/static/media/common/footer/visa-icon.svg"
+                class="offscreenimage lazy"
+                width="50"
+                height="25"
+                src="https://img2.hkrtcdn.com/react/static/media/common/footer/visa-icon.svg"
+                alt="visacard"
+                itemprop=""
+                imagewidth="50"
+                imageurl="https://img2.hkrtcdn.com/react/static/media/common/footer/visa-icon.svg"
+                imagealt="visacard"
+              /><img
+                data-original="https://img10.hkrtcdn.com/react/static/media/common/footer/mastercard-icon.svg"
+                class="offscreenimage lazy"
+                width="50"
+                height="25"
+                src="https://img10.hkrtcdn.com/react/static/media/common/footer/mastercard-icon.svg"
+                alt="mastercard"
+                itemprop=""
+                imagewidth="50"
+                imageurl="https://img10.hkrtcdn.com/react/static/media/common/footer/mastercard-icon.svg"
+                imagealt="mastercard"
+              /><img
+                data-original="https://img2.hkrtcdn.com/react/static/media/common/footer/amex-icon.svg"
+                class="offscreenimage lazy"
+                width="50"
+                height="25"
+                src="https://img2.hkrtcdn.com/react/static/media/common/footer/amex-icon.svg"
+                alt="americanexpress"
+                itemprop=""
+                imagewidth="50"
+                imageurl="https://img2.hkrtcdn.com/react/static/media/common/footer/amex-icon.svg"
+                imagealt="americanexpress"
+              /><img
+                data-original="https://img10.hkrtcdn.com/react/static/media/common/footer/wallet-icon.svg"
+                class="offscreenimage lazy"
+                width="50"
+                height="25"
+                src="https://img10.hkrtcdn.com/react/static/media/common/footer/wallet-icon.svg"
+                alt="wallet"
+                itemprop=""
+                imagewidth="50"
+                imageurl="https://img10.hkrtcdn.com/react/static/media/common/footer/wallet-icon.svg"
+                imagealt="wallet"
+              /><img
+                data-original="https://img10.hkrtcdn.com/react/static/media/common/footer/net-banking-icon.svg"
+                class="offscreenimage lazy"
+                width="50"
+                height="25"
+                src="https://img10.hkrtcdn.com/react/static/media/common/footer/net-banking-icon.svg"
+                alt="netbankingNew"
+                itemprop=""
+                imagewidth="50"
+                imageurl="https://img10.hkrtcdn.com/react/static/media/common/footer/net-banking-icon.svg"
+                imagealt="netbankingNew"
+              /><img
+                data-original="https://img2.hkrtcdn.com/react/static/media/common/footer/emi-icon.svg"
+                class="offscreenimage lazy"
+                width="50"
+                height="25"
+                src="https://img2.hkrtcdn.com/react/static/media/common/footer/emi-icon.svg"
+                alt="emi"
+                itemprop=""
+                imagewidth="50"
+                imageurl="https://img2.hkrtcdn.com/react/static/media/common/footer/emi-icon.svg"
+                imagealt="emi"
+              /><img
+                data-original="https://img2.hkrtcdn.com/react/static/media/common/footer/cod-icon.svg"
+                class="offscreenimage lazy"
+                width="50"
+                height="25"
+                src="https://img2.hkrtcdn.com/react/static/media/common/footer/cod-icon.svg"
+                alt="cashondeliveryNew"
+                itemprop=""
+                imagewidth="50"
+                imageurl="https://img2.hkrtcdn.com/react/static/media/common/footer/cod-icon.svg"
+                imagealt="cashondeliveryNew"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./Scripts/payment.js"></script>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/healthkartAddressPage.css" />
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <div class="header-container">
+      <div class="cont1">
+        <div>
+          <div class="logo">HEALT<span>HK</span>ART</div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg"
+              alt=""
+            />CART
+          </div>
+          <div></div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-blue.svg"
+              alt=""
+            />ADDRESS
+          </div>
+          <div></div>
+          <div>
+            <img
+              src="https://img5.hkrtcdn.com/react/static/media/checkout/tick-grey.svg"
+              alt=""
+            />PAYMENT
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="address-modal">
+      <div class="address-head">
+        <h2>Add new address</h2>
+        <img
+          src="https://img2.hkrtcdn.com/react/static/media/common/login/Closs.svg"
+          alt="close"
+        />
+      </div>
+      <div class="form-container">
+        <form class="address-form">
+          <div class="fieldset-container">
+            <div class="address-form-row">
+              <div class="address-full-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="address-name"
+                    id="address_name"
+                    required
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Name</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="number"
+                    name="mobile-no."
+                    id="mobile_num"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Mobile No.</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="number"
+                    name="alternate-no."
+                    id="alternate_num"
+                    class="address-input-healthkart"
+                    required
+                    autocomplete="off"
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Alternate No.</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-full-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="address"
+                    id="delivery_address"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Address</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="landmark"
+                    id="landmark"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Landmark</span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="pincode"
+                    id="pincode"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">Pincode</span
+                    ><span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="address-form-row">
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">State</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="address-half-row">
+                <fieldset class="address-fieldset">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="address-input-healthkart"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="address-label"
+                    ><span class="content-text">City</span>
+                    <span class="address-mandatory-details">*</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+
+            <button class="address-button">Save & Deliver</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./Scripts/address.js"></script>
